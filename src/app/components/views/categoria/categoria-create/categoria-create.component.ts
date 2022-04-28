@@ -11,8 +11,8 @@ import { CategoriaService } from '../categoria.service';
 export class CategoriaCreateComponent implements OnInit {
 
   categoria: Categoria = {
-    name: '',
-    description: ''
+    nome: '',
+    descricao: ''
   }
 
   constructor(private service: CategoriaService, private router: Router) { }

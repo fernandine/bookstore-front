@@ -21,7 +21,7 @@ import { CategoriaReadComponent } from "./components/views/categoria/categoria-r
 import { CategoriaCreateComponent } from "./components/views/categoria/categoria-create/categoria-create.component";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MatInputModule } from "@angular/material/input";
-import { MatFormFieldModule } from "@angular/material/form-field";
+import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { CategoriaDeleteComponent } from './components/views/categoria/categoria-delete/categoria-delete.component';
 import { CategoriaUpdateComponent } from './components/views/categoria/categoria-update/categoria-update.component';

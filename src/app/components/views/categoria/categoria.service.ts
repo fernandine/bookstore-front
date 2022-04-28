@@ -10,7 +10,7 @@ import { Categoria } from './categoria.model';
 })
 export class CategoriaService {
 
-  baseUrl: String = environment.baseUrl;
+  baseUrl: string = environment.baseUrl;
 
   constructor(private http: HttpClient, private _snack: MatSnackBar) { }
 
@@ -19,7 +19,7 @@ export class CategoriaService {
     return this.http.get<Categoria[]>(url)
   }
 
-  findById(id: String): Observable<Categoria> {
+  findById(id: string): Observable<Categoria> {
     const url = `${this.baseUrl}/categorias/${id}`
     return this.http.get<Categoria>(url)
   }
@@ -29,7 +29,7 @@ export class CategoriaService {
     return this.http.post<Categoria>(url, categoria);
   }
 
-  delete(id: String):Observable<void> {
+  delete(id: string):Observable<void> {
     const url = `${this.baseUrl}/categorias/${id}`
     return this.http.delete<void>(url)
   }
@@ -39,7 +39,7 @@ export class CategoriaService {
     return this.http.put<void>(url, categoria)
   }
 
-  mensagem(str: String): void {
+  mensagem(str: string): void {
     this._snack.open(`${str}`, 'OK', {
       horizontalPosition: 'end',
       verticalPosition: 'top',
